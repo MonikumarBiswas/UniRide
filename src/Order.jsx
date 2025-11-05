@@ -9,7 +9,7 @@ const OrderSec = () => {
       <div className=" mt-5 sm:flex sm:justify-between rounded-2xl items-center ">
            
           <div className="flex flex-col justify-center items-center sm:w-[50%] bg-amber-300 rounded-2xl m-4"> 
-             <h1 className='font-bold text-center font-serif font-sans text-xl sm:text-2xl'> UniRide is a ride sharing App for the Teacher & students of SUST  </h1>
+             <h1 className='font-bold text-center font-serif  text-xl sm:text-2xl'> UniRide is a ride sharing App for the Teacher & students of SUST  </h1>
               <img src={image} alt="Order Illustration" className="w-96 p-4 rounded-2xl object-fill bg-inherit"/>  
           </div>
 
