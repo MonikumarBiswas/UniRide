@@ -1,21 +1,22 @@
 import photo from './assets/map.png';
+import Button from './button';
 
 
 
  const data1 = [
-            {title: "IICT",             description : "Available student's : 3" , buttonText : "Book Now !" },
-            {title: "Shah poran Hall",  description : "Available student's : 5" , buttonText : "Book Now !" },
-            {title: "Mujtoba Ali Hall", description : "Available student's : 2" , buttonText : "Book Now !" },
-            {title: "Ladies Hall",      description : "Available student's : 4" , buttonText : "Book Now !" },
+            {title: "IICT",             description : "Available student's : 3" , buttonText : "Accept" },
+            {title: "Shah poran Hall",  description : "Available student's : 5" , buttonText : "Accept" },
+            {title: "Mujtoba Ali Hall", description : "Available student's : 2" , buttonText : "Accept" },
+            {title: "Ladies Hall",      description : "Available student's : 4" , buttonText : "Accept" },
 
         ];
 
          const data2 = [
            
-            {title: "Cafetaria",   description : "Available student's : 4" , buttonText : "Book Now !" },
-            {title: "D-Building",  description : "Available student's : 4" , buttonText : "Book Now !" },
-            {title: "UC Building", description : "Available student's : 4" , buttonText : "Book Now !" },
-            {title: "SUST Gate",   description : "Available student's : 4" , buttonText : "Book Now !" },
+            {title: "Cafetaria",   description : "Available student's : 4" , buttonText : "Accept" },
+            {title: "D-Building",  description : "Available student's : 4" , buttonText : "Accept" },
+            {title: "UC Building", description : "Available student's : 4" , buttonText : "Accept" },
+            {title: "SUST Gate",   description : "Available student's : 4" , buttonText : "Accept" },
 
         ];
 
@@ -33,11 +34,10 @@ const DriverPortal = () => {
               
              { data2.map((item , index) => (
 
-                        <div key={index} className="bg-[#00b4d8] p-5  rounded-2xl shadow-blue-400 shadow-2xl  flex flex-col justify-center items-center sm:space-y-2 ">
+                        <div key={index} className="bg-[#00b4d8] p-5  rounded-2xl shadow-blue-400 shadow-2xl  flex flex-col justify-center items-center sm:space-y-6 space-y-5">
                            <h2 className="text-xl font-bold mb-2">{item.title}</h2>
                            <p className="text-sm">{item.description}</p>
-                            <button className="mt-4 bg-[#023e8a] text-white px-4 py-2 rounded-2xl font-semibold  transition-transform duration-300 
-                                   hover:-translate-y-2 hover:shadow-lg" > {item.buttonText}</button>
+                            <Button  messeage={item.buttonText}> </Button>
                         </div>
                       ))}
                </div>
@@ -56,11 +56,10 @@ const DriverPortal = () => {
               
              { data1.map((item , index) => (
 
-                        <div key={index} className="bg-[#00b4d8] p-5   rounded-2xl shadow-blue-400  shadow-2xl flex flex-col justify-center items-center sm:space-y-2 ">
+                        <div key={index} className="bg-[#00b4d8] p-5   rounded-2xl shadow-blue-400  shadow-2xl flex flex-col justify-center items-center sm:space-y-6 space-y-5 ">
                            <h2 className="text-xl font-bold mb-2">{item.title}</h2>
                            <p className="text-sm">{item.description}</p>
-                            <button className="mt-4 bg-[#023e8a] text-white px-4 py-2 rounded-2xl font-semibold  transition-transform duration-300 
-                                   hover:-translate-y-2 hover:shadow-lg" > {item.buttonText}</button>
+                            <Button messeage={item.buttonText}> </Button>
                         </div>
                       ))}
                </div>

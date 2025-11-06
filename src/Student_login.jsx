@@ -2,6 +2,7 @@ import { FaCarSide } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Button from "./button";
 
 
 
@@ -38,11 +39,7 @@ const StudentLg = () => {
       <form  onSubmit={handleSubmit} className="flex flex-col justify-center items-center space-y-4">
          <input type="text" placeholder="Student ID" value={studentID} onChange={(e) => setStudentID(e.target.value)}  className="w-84 bg-white border-black  px-4 py-2 border-2 border-dashed rounded-lg focus:outline-none shadow-2xl" required />
          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-84 bg-white border-black  px-4 py-2 border-2 border-dashed rounded-lg focus:outline-none shadow-2xl" required />
-         <button type="submit" className="bg-[#023e8a] text-white px-6 py-2 rounded-2xl font-semibold 
-                                        hover:bg-[#03045e] hover:shadow-lg transition-transform duration-300 
-                                        hover:-translate-y-1 ">
-            Login
-         </button>
+          < Button  messeage={"Log in" }/>
       </form>
 
     </div>

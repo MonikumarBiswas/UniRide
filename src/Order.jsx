@@ -1,6 +1,8 @@
 import image from './assets/cng.jpg';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaLocationCrosshairs } from "react-icons/fa6";
+import Button from './button'
+
 
 const OrderSec = () => {
   return ( 
@@ -9,7 +11,7 @@ const OrderSec = () => {
       <div className=" mt-5 sm:flex sm:justify-between rounded-2xl items-center ">
            
           <div className="flex flex-col justify-center items-center sm:w-[50%] bg-amber-300 rounded-2xl m-4"> 
-             <h1 className='font-bold text-center font-serif  text-xl sm:text-2xl'> UniRide is a ride sharing App for the Teacher & students of SUST  </h1>
+             <h1 className='font-bold text-center font-serif p-5 text-xl sm:text-2xl'> UniRide is a ride sharing App for the Teacher & students of SUST  </h1>
               <img src={image} alt="Order Illustration" className="w-96 p-4 rounded-2xl object-fill bg-inherit"/>  
           </div>
 
@@ -24,12 +26,7 @@ const OrderSec = () => {
                        <input type="text" placeholder='Destination'  className="w-[60%] pl-10 pr-4 py-2 rounded-lg focus:outline-none  shadow-2xl  "  required/>
                         <FaLocationCrosshairs className='text-4xl shadow-2xl text-[#b81e61] p-0.5 '/>
                   </div>
-                  <button className="mb-5 bg-[#023e8a] text-white px-6 py-2 rounded-2xl font-semibold 
-                                     hover:bg-[#03045e] hover:shadow-lg transition-transform duration-300 
-                                     hover:-translate-y-1 ">
-                      Book Now
-                  </button>
-
+                   <Button messeage ={"Book Now!"} /> 
               </div>
 
       </div>
